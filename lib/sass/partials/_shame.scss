@@ -1,0 +1,103 @@
+// theme: people from above
+// 17 march 2017
+
+.more_pages {
+    &_back {
+        height: 2px;
+        background-color: silver;
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 4px;
+        }
+    &_far {
+        height: 2px;
+        background-color: gainsboro;
+        width: 94%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 4px;
+        }
+    }
+
+.container_padding{
+    padding: 20px;
+    }
+
+.content_title {
+    font-weight: bold;
+    }
+
+.container_separator {
+    &_top {
+        border-top: 1px solid gainsboro;
+        }
+    &_bottom {
+        border-bottom: 1px solid gainsboro;
+        }
+    }
+
+.contact_details .fa {
+    color: darkgray;
+    }
+
+.content_container {
+    .btn {
+        background-color: transparent;
+        &-sm {
+            padding: 5px 15px;
+            }
+        .fa {
+            font-size: fontsize(18);
+            margin-right: 10px;
+            }
+        }
+    .btn-outline {
+        &-location {
+            color: #bc81fc;
+            border: 1px solid #bc81fc;
+            // background-color: #6f92e4;
+            }
+        &-info {
+            color: white;
+            border: 1px solid none;
+            background-color: #6f92e4;
+            }
+        &-direction {
+            color: gray;
+            border: 1px solid gray;
+            // background-color: ;
+            }
+        }
+    margin-bottom: 30px;
+    border: 1px solid gainsboro;
+    background-color: white;
+    box-shadow: 0px 1px 2px gainsboro;
+    // padding: 10px;
+    &_inner {
+
+        } // &_inner
+        &_img {
+            position: relative;
+            .btn {
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                .fa {
+                    font-size: fontsize(23);
+                    }
+                }
+            img{
+                width: 100%;
+                }
+            }
+        h1 {
+            margin: 0;
+            font-weight: bold;
+            font-size: fontsize(65);
+            span {
+                color: gainsboro;
+                font-weight: bold;
+                }
+            }
+    }

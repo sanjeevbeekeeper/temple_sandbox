@@ -1,0 +1,155 @@
+/*
+Created by: Sanjeev Beekeeper
+Theme: People From Above
+18 mar 2017
+*/
+
+// modules
+@import 'modules/fonts';
+@import 'modules/mixins';
+@import 'modules/functions';
+
+// partials
+@import 'partials/base';
+@import 'partials/timing';
+@import 'partials/sidebar';
+@import 'partials/shame';
+
+
+	/* location and category (east facing, architecture...) in the index.php */
+	.templeIndex--container {
+		& .list-group  {
+			// index page location (on the right)
+			& span {
+				font-size: 1rem;
+				color: lightgray;
+				// index page category and tags
+				&.cat {
+					font-size: .9rem;
+					font-weight: 400;
+					display: block;
+					}
+				}
+			// index page description
+			& p {
+				margin-top: 10px;
+				font-size: .8rem;
+				font-weight: 400;
+				color: inherit;
+				margin-bottom: 0;
+				}
+			// index page list group
+			& .list-group-item {
+				font-weight: bold;
+				font-size: 1.2rem;
+				}
+			}
+		}
+
+	/* Sidebar Gallery Container */
+	.sidebar--content {
+		margin-bottom: 20px;
+		h4 {
+			font-weight: bold;
+			font-size: 1.3rem;
+			padding-bottom: 6px;
+			}
+		&__gallery img {
+			object-fit: cover;
+			background-color: gainsboro;
+			height: 55px;
+			width: 55px;
+			margin: 2px;
+			margin-bottom: 6px;
+			}
+		}
+
+	/* Last minute adjustment */
+	.padding {
+		$mar_pad: 10px;
+		&-r {
+			padding-right: $mar_pad;
+			}
+		&-l {
+			padding-left: $mar_pad;
+			}
+		}
+
+	/* Grid system */
+	.nogutters {
+		padding-left: 0px;
+		padding-right: 0px;
+		}
+
+	/* Debug */
+	.debug {
+		border: 1px solid red;
+		}
+
+	/* Navbar */
+	.bg-faded {
+		background-color: rgba(255, 255, 255, 0.96);
+		box-shadow: 0px -2px 15px gainsboro;
+		}
+	.container {
+		margin-top: 80px !important;
+		}
+
+	/* Card */
+	.card {
+		// single page top temple cover image
+		img {
+			width: 100%;
+			}
+	.card-block {
+		padding: 1rem;
+		& .card-text {
+			color: #fff;
+			}
+		& button {
+			font-weight: bold;
+			}
+		}
+	.card-header {
+		padding: .50rem 1rem;
+		}
+	}
+
+	/* SIDEBAR CARD */
+	.sidebar {
+		& .card {
+			& .card-block {
+				padding: .5rem;
+				& .card-text  {
+					color: lightgray;
+					font-weight: bold;
+					margin-bottom: 5px;
+					}
+				}
+			}
+		& .card-title  {
+			font-size: 1.1rem;
+			font-weight: bold;
+			margin-top: 0px;
+			}
+		}
+
+	/* Single.php - Temple title */
+	.title--container {
+		&__text {
+			margin-top: 0px;
+			font-weight: bold;
+			letter-spacing: -1px;
+			font-size: 48px;
+			}
+		}
+
+	/* Alternative color is removed from Google chart */
+	svg g:first-of-type {
+		& path {
+			stroke: #e6e6e6;
+			}
+		& rect:not(:last-child) {
+			fill: #ffffff;
+			}
+		}

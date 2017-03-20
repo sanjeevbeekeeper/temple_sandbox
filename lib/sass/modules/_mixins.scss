@@ -1,0 +1,6 @@
+
+
+// lineheight
+@mixin lineheight($val:1.2){
+	line-height: #{$val};
+    }

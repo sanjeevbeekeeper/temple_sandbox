@@ -1,0 +1,24 @@
+{
+  "name": "wp-scaffolding",
+  "version": "1.0.0",
+  "description": "This is a base skeleton",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanjeevbeekeeper/wp-scaffolding.git"
+  },
+  "author": "Sanjeev Beekeeper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanjeevbeekeeper/wp-scaffolding/issues"
+  },
+  "homepage": "https://github.com/sanjeevbeekeeper/wp-scaffolding#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
